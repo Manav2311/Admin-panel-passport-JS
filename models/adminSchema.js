@@ -4,31 +4,28 @@ const { default: mongoose } = require("mongoose");
 const adminSchema = new mongoose.Schema({
     name: {
         type: String,
-        required: true
     },
     email: {
-        type:String,
-        required:true
+        type:String
     },
     password: {
         type: String,
-        required: true
     },
     gender: {
         type: String,
-        required: true
     },
     hobby: {
         type: Array,
-        required: true
     },
     image: {
         type: String,
-        required: true
+    },
+    phone: {
+        type: Number,
     }
 })
 
-const admin =  mongoose.model("adminTbl", adminSchema);
+const admin =  mongoose.model("adminTable", adminSchema);
 
 module.exports  = admin;
 

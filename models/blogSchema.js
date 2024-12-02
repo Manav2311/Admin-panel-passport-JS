@@ -10,6 +10,6 @@ const blogSchema = new mongoose.Schema({
     date: { type: Date, default: Date.now }
 })
 
-const blogs = mongoose.model('blogsTbl',blogSchema);
+const blogs = mongoose.model('blogTable',blogSchema);
 
 module.exports = blogs;
