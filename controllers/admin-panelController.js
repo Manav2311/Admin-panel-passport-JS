@@ -2,7 +2,7 @@ const admin = require("../models/adminSchema");
 
 module.exports.createAdmin = async (req, res) => {
     try {
-        let data = await User.create(req.body);
+        let data = await admin.create(req.body);
         return res.redirect('/');
     } catch (error) {
         console.log(error);
